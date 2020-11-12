@@ -38,6 +38,7 @@ autocmd BufWinEnter quickfix nnoremap <silent> <buffer>q :cclose<cr>:lclose<cr>
 autocmd VimEnter * nested if argc() > 1 && !&diff | tab sball | tabfirst | endif
 
 let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['.git', 'Makefile']
 
 " Start Banner
 let g:startify_files_number = 6
@@ -121,6 +122,9 @@ autocmd FileType css,less,scss setlocal iskeyword+=-
 " Make sure all types of requirements.txt files get syntax highlighting.
 autocmd BufNewFile,BufRead requirements*.txt set syntax=python
 autocmd BufNewFile,BufRead *.pug.html set syntax=pug
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " Default file explore
 let g:netrw_altv = 1

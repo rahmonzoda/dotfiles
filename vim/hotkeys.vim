@@ -82,15 +82,15 @@ nnoremap <silent> <Leader>v- :vertical resize -5<CR>
 
 " Git
 nnoremap <silent> <Leader>gd :Gdiff <CR>
-nnoremap <silent> <Leader>gb :Gblame <CR>
-nnoremap <silent> <Leader>gs :Gstatus <CR>
-nnoremap <silent> <Leader>gh :GitGutterStageHunk<CR>
-nnoremap <silent> <Leader>gc :Gcommit <CR>
-nnoremap <silent> <Leader>gf :Gfetch <CR>
-nnoremap <silent> <Leader>gl :Gpull <CR>
-nnoremap <silent> <Leader>gp :Gpush <CR>
+nnoremap <silent> <Leader>gb :Git blame <CR>
+nnoremap <silent> <Leader>gs :Git status <CR>
+nnoremap <silent> <Leader>gc :Git commit <CR>
+nnoremap <silent> <Leader>gf :Git fetch <CR>
+nnoremap <silent> <Leader>gl :Git pull <CR>
+nnoremap <silent> <Leader>gp :Git push <CR>
 nnoremap <silent> <Leader>gk :Commits <CR>
 nnoremap <silent> <Leader>go :.Gbrowse <CR>
+nnoremap <silent> <Leader>gh :GitGutterStageHunk<CR>
 
 nnoremap <silent> <Leader>hf :History <CR>
 nnoremap <silent> <Leader>hc :History: <CR>

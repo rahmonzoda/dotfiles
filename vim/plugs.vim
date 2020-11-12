@@ -36,8 +36,8 @@ Plug 'junegunn/fzf.vim'
 
 " --- Javascript ---
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'javascript.jsx']}
-Plug 'mxw/vim-jsx', {'for': 'javascript.jsx'}
-Plug 'styled-components/vim-styled-components', {'for': ['javascript', 'javascript.jsx'], 'branch': 'main'}
+Plug 'HerringtonDarkholme/yats.vim', {'for': ['typescript', 'typescriptreact']}
+Plug 'maxmellon/vim-jsx-pretty', {'for': ['typescriptreact', 'javascript.jsx']}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 
 " --- HTML, Xml ---
@@ -52,6 +52,7 @@ Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'less', 'scss']}
 Plug 'groenewege/vim-less', {'for': 'less'}
 Plug 'cakebaker/scss-syntax.vim', {'for': 'scss'}
 Plug 'wavded/vim-stylus', {'for ': 'styl'}
+Plug 'styled-components/vim-styled-components', {'for': 'js', 'branch': 'main'}
 
 " --- Python ---
 Plug 'vim-python/python-syntax', {'for': 'python'}
@@ -67,5 +68,6 @@ Plug 'airblade/vim-rooter'
 Plug 'benizi/vim-automkdir'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'jparise/vim-graphql'
 
 call plug#end()

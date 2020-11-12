@@ -13,8 +13,8 @@
   "suggest.preferCompleteThanJumpPlaceholder": true,
 
   // tsserver
-  "tsserver.npm": "/usr/local/bin/npm",
   "tsserver.formatOnType": false,
+  "tsserver.npm": "/Users/ubayd/.nvm/versions/node/v14.11.0/bin/npm",
 
   // javascript
   "javascript.validate.enable": false,
@@ -23,8 +23,9 @@
 
   // snippets
   "snippets.extends" : {
-    "javascriptreact": ["javascript"],
-    "typescript": ["javascript"]
+    "typescript": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "javascriptreact": ["javascript"]
   },
   "snippets.trace": "verbose",
   "snippets.ultisnips.enable": true,

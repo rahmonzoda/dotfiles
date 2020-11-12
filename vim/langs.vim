@@ -17,7 +17,7 @@ let g:python_highlight_string_formatting = 1
 " --- Other ---
 let g:vim_json_syntax_conceal = 0
 autocmd FileType htmljinja,htmldjango setlocal commentstring={#\ %s\ #}
-autocmd BufRead,BufNewFile .{jscs,jshint,eslint,babel}rc set filetype=json
+autocmd BufRead,BufNewFile .{jscs,jshint,eslint,babel,prettier}rc set filetype=json
 autocmd BufRead,BufNewFile *.wsdl setlocal filetype=xsd
 " autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
 autocmd FileType json syntax match Comment +\/\/.\+$+

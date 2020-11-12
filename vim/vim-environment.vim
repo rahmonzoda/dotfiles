@@ -7,7 +7,7 @@ set termguicolors
 set background=dark
 
 set number
-set relativenumber
+" set relativenumber
 set backspace=indent,eol,start
 
 set nobackup

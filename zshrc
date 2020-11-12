@@ -1,7 +1,7 @@
 export ZSH=${HOME}/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
-plugins=(git gitfast osx yarn)
+plugins=(git gitfast macos yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,9 +46,6 @@ alias rm="rm -rf"
 alias df='cd ~/.dotfiles'
 alias py='python3 '
 alias tmux="tmux attach || tmux new"
-
-# recursively delete `.DS_Store` files from current folder
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag --skip-vcs-ignores -p ~/.dotfiles/agignore -g ""'

@@ -13,7 +13,7 @@ endsnippet
 snippet efn "Function Expression"
 const ${1:functionName} = (${2}) => {
 	${0:${VISUAL}}
-};
+}
 endsnippet
 
 snippet cla "class"
@@ -42,7 +42,7 @@ snippet switch "switch ( expression)"
 switch (${1:expression}) {
 	case '${3:case}':
 		${4}
-		break;
+		break
 	${0}
 	default:
 		${2}
@@ -52,7 +52,7 @@ endsnippet
 snippet case "case 'xyz': ... break"
 case '${1:case}':
 	${0:${VISUAL}}
-	break;
+	break
 endsnippet
 
 snippet try "try { ... } catch(e) { ... }"
@@ -94,23 +94,23 @@ endsnippet
 snippet do "do { ... } while (condition)"
 do {
 	${0:${VISUAL}}
-} while (${1:/* condition */});
+} while (${1:/* condition */})
 endsnippet
 
 snippet terr "throw new Error"
-throw new Error('${1:error message}');
+throw new Error('${1:error message}')
 endsnippet
 
 snippet cl "console.log" w
-console.log(${0});
+console.log(${0})
 endsnippet
 
 snippet cd "console.debug"
-	console.debug(${0});
+	console.debug(${0})
 endsnippet
 
 snippet ce "console.error" w
-console.error(${0});
+console.error(${0})
 endsnippet
 
 snippet ci "console.info" w
@@ -118,29 +118,29 @@ console.info(${0})
 endsnippet
 
 snippet ct "console.table" w
-console.table(${0});
+console.table(${0})
 endsnippet
 
 snippet de "debugger"
-debugger;
+debugger
 endsnippet
 
 snippet timeout
-setTimeout(() => {${0}}${2}, ${1:10});
+setTimeout(() => {${0}}${2}, ${1:10})
 endsnippet
 
 snippet im "import xyz from 'xyz'"
-import ${1} from '${2:$1}';
+import ${1} from '${2:$1}'
 endsnippet
 
 snippet imas "import * as xyz from 'xyz'"
-import * as ${1} from '${2:$1}';
+import * as ${1} from '${2:$1}'
 endsnippet
 
 snippet imm "import { member } from 'xyz'"
 import {
 	${1}
-} from '${2}';
+} from '${2}'
 endsnippet
 
 snippet ed "export default"
@@ -150,20 +150,20 @@ endsnippet
 #########
 # React #
 #########
-snippet ir "import React from 'react';"
-import React from 'react';
+snippet ir "import React from 'react'"
+import React from 'react'
 endsnippet
 
-snippet ire "import React, {} from 'react';"
+snippet ire "import React, {} from 'react'"
 import React, {
 	${0},
-} from 'react';
+} from 'react'
 endsnippet
 
 snippet rcl "React Class"
 import React, {
 	Component,
-} from 'react';
+} from 'react'
 
 class ${1:MyComponent} extends Component {
 	render() {
@@ -171,21 +171,21 @@ class ${1:MyComponent} extends Component {
 	}
 }
 
-export default $1;
+export default $1
 endsnippet
 
 snippet rss "this.setState({})"
 this.setState({
 	${1}: ${0},
-});
+})
 endsnippet
 
 snippet rra "Redux Action"
 export const ${1:actionName} = (${2}) => ({
 	type: ${0:${VISUAL}}
-});
+})
 endsnippet
 
 snippet rrc "Redux Action Constant"
-export const ${1} = '${0:${VISUAL}}$1';
+export const ${1} = '${0:${VISUAL}}$1'
 endsnippet

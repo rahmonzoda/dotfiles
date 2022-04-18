@@ -36,6 +36,7 @@
   "snippets.snipmate.enable": false,
 
   // prettier
+  "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": true,

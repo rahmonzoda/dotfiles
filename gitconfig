@@ -1,6 +1,6 @@
 [user]
-  name = Ubayd
-  email = ubayd.rahmonzoda@gmail.com
+	name = Ubayd Rahmonzoda
+	email = ubayd.rahmonzoda@gmail.com
 
 [core]
   editor = "nvim"
@@ -62,3 +62,5 @@
 
 [difftool "nvimdiff2"]
   cmd = nvim -d $LOCAL $REMOTE
+[init]
+	defaultBranch = main

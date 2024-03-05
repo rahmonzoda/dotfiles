@@ -89,7 +89,7 @@ nnoremap <silent> <Leader>gf :Git fetch <CR>
 nnoremap <silent> <Leader>gl :Git pull <CR>
 nnoremap <silent> <Leader>gp :Git push <CR>
 nnoremap <silent> <Leader>gk :Commits <CR>
-nnoremap <silent> <Leader>go :.Gbrowse <CR>
+nnoremap <silent> <Leader>go :.GBrowse <CR>
 nnoremap <silent> <Leader>gh :GitGutterStageHunk<CR>
 
 nnoremap <silent> <Leader>hf :History <CR>

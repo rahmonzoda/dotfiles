@@ -66,8 +66,8 @@ Plug 'airblade/vim-gitgutter'
 " --- Other ---
 Plug 'airblade/vim-rooter'
 Plug 'benizi/vim-automkdir'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'jparise/vim-graphql'
+Plug 'prisma/vim-prisma'
 
 call plug#end()

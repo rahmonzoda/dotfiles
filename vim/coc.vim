@@ -2,16 +2,17 @@
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#pum#visible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ CheckBackspace() ? "\<TAB>" :
       \ coc#refresh()
 
-inoremap <silent><expr> <cr>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 
-let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_next = '<tab>'
 let g:coc_snippet_prev = '<S-Tab>'
 
 nnoremap <leader>es :call OpenSnippetFile()<cr>
@@ -50,11 +51,6 @@ nnoremap <leader>= :<C-u>CocCommand prettier.formatFile<cr>
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
 function! s:showDocumentation()
   if &filetype == 'vim'

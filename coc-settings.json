@@ -14,7 +14,6 @@
 
   // tsserver
   "tsserver.formatOnType": false,
-  "tsserver.npm": "/Users/ubayd/.nvm/versions/node/v14.11.0/bin/npm",
 
   // javascript
   "javascript.validate.enable": false,

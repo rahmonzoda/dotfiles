@@ -1,7 +1,12 @@
 export ZSH=${HOME}/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
-plugins=(git gitfast macos yarn)
+plugins=(
+  git
+  gitfast
+  macos
+  yarn
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -9,8 +14,8 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Python & Virtualenv
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=~/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Go
 export GOPATH=$HOME/.go
@@ -52,6 +57,10 @@ export FZF_DEFAULT_COMMAND='ag --skip-vcs-ignores -p ~/.dotfiles/agignore -g ""'
 
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# VOLTA
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 HISTFILE=~/.zsh-history
 SAVEHIST=1000

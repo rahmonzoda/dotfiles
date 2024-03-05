@@ -116,6 +116,8 @@ let g:gitgutter_sign_modified = '∙'
 let g:gitgutter_sign_removed = '∙'
 let g:gitgutter_sign_modified_removed = '∙'
 
+let g:node_host_prog = system('volta which neovim-node-host | tr -d "\n"')
+
 autocmd FileType html,htmljinja,htmldjango,xml,javascript.jsx EmmetInstall
 autocmd FileType css,less,scss setlocal iskeyword+=-
 
